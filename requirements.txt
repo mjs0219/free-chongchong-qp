@@ -1,0 +1,14 @@
+# 虫虫钢琴曲谱客户端依赖
+# 需要 Python 3.8+（推荐 3.10+）
+# tkinter 为 Python 标准库，随官方安装包自带，无需在此列出
+# 安装：pip install -r requirements.txt
+
+# ---- 必需：客户端下载 + 核心导出 ----
+requests>=2.25      # 请求曲谱页、下载 .ccmz
+midiutil>=1.2.1     # 生成标准 MIDI
+
+# ---- 可选：谱面 PNG / PDF（勾选 PNG/PDF 或 -t png,pdf 时才需要）----
+pillow>=9.0         # LilyPond 输出 PNG 的处理与合成；客户端背景动画
+reportlab>=3.6      # 将 PNG 页面合成 A4 PDF
+
+# 注：导出 PNG/PDF 还需单独安装 LilyPond 本体，见 README
